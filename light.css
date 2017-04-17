@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+:root
+{
+  /* OVERALL */
+  --overall-font-family:                'Roboto';
+  --overall-font-color:                 #d0d0d0;
+
+  /* TAGS */
+  --tag-bg-color:                       #212121;
+  --tag-addBtn-color:                   #2e2e2e;
+  --tag-addBtnHover-color:              #121212;
+  --tag-font-color:                     #bcbcbc;
+  --tag-selected-and-hover-bg:          #121212;
+
+  /* NOTES */
+  /* Header and filter box */
+  --note-bg-color:                      #ededed;
+  --note-font-color:                    #888888;
+
+  --note-addBtn-color:                  #fafafa;
+  --note-addBtnHover-color:             #e5e5e5;
+  --note-AddBtnFont-color:              #c8c8c8;
+
+  --note-filter-bg-color:               #fafafa;
+
+  /* Sort field */
+  --note-sort-bg:                       #121212;
+  --note-font-color:                    #373737;
+
+  /* Selected and Hover */
+  --note-selected-bg:                   #ededed;
+  --note-selected-left-border-color:    #F44336;
+  --note-selected-left-border-size:     6px;
+  --note-selected-font-color:           #373737;
+
+  /* Generic note info */
+  --note-box-bg-color:                  #ededed;
+  --note-headline-font-color:           #6f6f6f;
+  --note-headline-font-size:            16px;
+  --note-preview-font-color:            #888888;
+  --note-preview-font-size:             12px;
+  --note-date-font-color:               #959595;
+  --note-date-font-size:                10px;
+  --note-border-size:                   1px;
+  --note-border-color:                  #e1e1e1;
+
+  /* EDITOR */
+  /* Title bar */
+  --editor-title-bg:                    #f5f5f5;
+  --editor-title-padding-top:           8px;
+  --editor-title-font-size:             24px;
+  --editor-title-font-weight:           normal;
+  --editor-title-font-color:            #121212;
+  --editor-title-font-tags-size:        12px;
+  --editor-title-font-tags-weight:      normal;
+  --editor-title-font-tags-color:       #959595;
+
+  /* Content */
+  --editor-content-bg:                  #f5f5f5;
+  --editor-content-font-family:         'Inconsolata';
+  --editor-content-font-color:          #212121;
+}
+
+
+body
+{
+  font-family: var(--overall-font-family) !important;
+  color: var(--overall-font-color) !important;
+}
+
+/* Editor extensions */
+.app .section > .content
+{
+  background-color: #f7f5f3 !important;
+}
+
+/* Sort button */
+.section-menu
+{
+  background-color: #fafafa !important;
+  color: black !important;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Account and Extensions background */
+.panel
+{
+  background-color: #f7f5f3 !important;
+  color: #121212 !important;
+}
+
+/* Menu dropdown (Delete and such) */
+.dropdown-menu
+{
+  background-color: #ffffff !important;
+  color: #121212 !important;
+}
+
+.nt-dropdown-menu.dark li .text
+{
+  color: #121212 !important;
+}
+
+.blue
+{
+  color: #121212 !important;
+}
+
+.gray-bg
+{
+  background-color: #ededed !important;
+  color: #121212 !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+.white-bg
+{
+  background-color: #f7f5f3 !important;
+  color: #121212 !important;
+  border: 0px solid #e5e5e5 !important;
+}
+
+
+/* TAGS */
+.app .tags .content
+{
+  background-color: var(--tag-bg-color) !important;
+}
+
+#tags-title-bar
+{
+  color: var(--tag-font-color) !important;
+}
+
+#tags-title-bar .add-button
+{
+  background-color: var(--tag-addBtn-color) !important;
+  font-size: 20px !important;
+}
+
+#tags-title-bar .add-button:hover
+{
+  background-color: var(--tag-addBtnHover-color) !important;
+  -webkit-transition: all ease-in-out 0.15s !important;
+  transition: all ease-in-out 0.15s !important;
+}
+
+.tags .tag
+{
+  color: var(--tag-font-color) !important;
+  font-style: normal !important;
+}
+
+.tags .tag > .info > .title
+{
+  color: var(--tag-font-color) !important;
+  font-style: normal !important;
+}
+
+.tags .tag.selected
+{
+  background-color: var(--tag-selected-and-hover-bg) !important;
+}
+
+.tags .tag:hover:not(.selected)
+{
+  background-color: var(--tag-selected-and-hover-bg) !important;
+  -webkit-transition: all ease-in-out 0.1s !important;
+  transition: all ease-in-out 0.1s !important;
+}
+
+/* Notes */
+.app .notes .content
+{
+  background-color: var(--note-bg-color) !important;
+}
+
+.notes
+{
+  border-left: var(--note-border-size) solid var(--note-border-color) !important;
+  border-right: var(--note-border-size) solid var(--note-border-color) !important;
+}
+
+#notes-title-bar
+{
+  background-color: var(--note-bg-color) !important;
+  color: var(--note-font-color) !important;
+}
+
+#notes-title-bar .add-button
+{
+  background-color: var(--note-addBtn-color) !important;
+  color: var(--note-AddBtnFont-color) !important;
+}
+
+#notes-title-bar .add-button:hover
+{
+  background-color: var(--note-addBtnHover-color) !important;
+  color: var(--note-AddBtnFont-color) !important;
+  -webkit-transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+  transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+}
+
+.notes .filter-section .filter-bar
+{
+  background-color: var(--note-filter-bg-color) !important;
+}
+
+.notes .note.selected
+{
+  background-color: var(--note-selected-bg) !important;
+  border-left: solid var(--note-selected-left-border-size) var(--note-selected-left-border-color) !important;
+  color: var(--note-selected-font-color) !important;
+}
+
+.notes .note:hover
+{
+  background-color: var(--note-selected-bg) !important;
+  color: var(--note-selected-font-color) !important;
+  border-left: solid var(--note-selected-left-border-size) var(--note-selected-left-border-color) !important;
+  -webkit-transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+  transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+}
+
+.notes .note
+{
+  background-color: var(--note-box-bg-color) !important;
+  color: var(--note-headline-font-color) !important;
+  height: 90px;
+  font-size: var(--note-headline-font-size) !important;
+  border-bottom: var(--note-border-size) solid var(--note-border-color) !important;
+}
+
+.notes .note .note-preview
+{
+  font-size: var(--note-preview-font-size) !important;
+  color: var(--note-preview-font-color) !important;
+}
+
+.date
+{
+  font-size: var(--note-date-font-size) !important;
+  color: var(--note-date-font-color) !important;
+}
+
+/* EDITOR */
+
+#editor-title-bar
+{
+  background-color: var(--editor-title-bg) !important;
+  padding-top: var(--editor-title-padding-top) !important;
+}
+
+#editor-title-bar > .title > .input
+{
+  font-size: var(--editor-title-font-size) !important;
+  font-weight: var(--editor-title-font-weight) !important;
+  color: var(--editor-title-font-color) !important;
+}
+
+#editor-title-bar .editor-tags .tags-input
+{
+  font-size: var(--editor-title-font-tags-size) !important;
+  font-weight: var(--editor-title-font-tags-weight) !important;
+  color: var(--editor-title-font-tags-color) !important;
+}
+
+.editor-content
+{
+  background-color: var(--editor-content-bg) !important;
+}
+
+.editor-content .editable
+{
+  background-color: var(--editor-content-bg) !important;
+  font-family: var(--editor-content-font-family) !important;
+  color: var(--editor-content-font-color) !important;
+}
+
+/* MENUES */
+
+.menu-section-header
+{
+  background-color: #ededed !important;
+  border-bottom: 1px solid #d0d0d0 !important;
+  color: #121212 !important;
+}
+
+.dropdown-menu.editor-menu ul li.menu-item
+{
+  background-color: #F5F5F5 !important;
+  border-bottom: 1px solid #d0d0d0 !important;
+}
+
+.dropdown-menu.editor-menu ul li.menu-item:hover
+{
+  background-color: #ededed !important;
+  color: #121212 !important;
+}
+
+.menu-section-footer
+{
+  background-color: #F5F5F5 !important;
+  border-top: 1px solid #d0d0d0 !important;
+  color: #121212 !important;
+}
+
+
+/* FOOTER */
+
+#footer-bar
+{
+  background-color: #171717 !important;
+}
+
+#footer-bar a
+{
+  color: #121212;
+}
+
+.footer-bar-link > a
+{
+  color: #dbdbdb !important;
+}
+
+/* UI */
+
+button.light
+{
+  background-color: #0088ff !important;
+  border: 0 !important;
+  color: #121212 !important;
+}
+
+.form-control
+{
+  background-color: #f7f5f3 !important;
+  border: 1px solid #e5e5e5 !important;
+}
