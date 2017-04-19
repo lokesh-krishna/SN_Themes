@@ -61,6 +61,69 @@
   --editor-content-bg:                  #f5f5f5;
   --editor-content-font-family:         'Inconsolata';
   --editor-content-font-color:          #212121;
+  --editor-extensions-bg:               #f7f5f3;
+
+  /* SECTION */
+  --section-content-bg:                 #fafafa ;
+  --section-font-color:                 #000000;
+  --section-border-size:                1px;
+  --section-border-color:               #e5e5e5;
+
+  /* PANEL */
+  --panel-content-bg:                   #f7f5f3;
+  --panel-font-color:                   #121212;
+
+  /* Dropdown menu */
+  --dropdown-bg:                        #ffffff;
+  --dropdown-font-color:                #121212;
+
+  /* Gray BG */
+  --graybg-bg:                          #ededed;
+  --graybg-font-color:                  #121212;
+  --graybg-border-size:                 1px;
+  --graybg-border-color:                #e5e5e5;
+
+  /* White BG */
+  --whitebg-bg:                          #f7f5f3;
+  --whitebg-font-color:                  #121212;
+  --whitebg-border-size:                 0px;
+  --whitebg-border-color:                #e5e5e5;
+
+  /* MENU SECTION */
+  /* Header */
+  --menu-bg:                             #ededed;
+  --menu-font-color:                     #121212;
+  --menu-border-size:                    1px;
+  --menu-border-color:                   #d0d0d0;
+
+  /* Dropdown menu */
+  --dropdownmenu-bg:                     #F5F5F5;
+  --dropdownmenu-border-size:            1px;
+  --dropdownmenu-border-color:           #d0d0d0;
+
+  /* Dropdown menu hover */
+  --dropdownhover-bg:                    #ededed;
+  --dropdownhover-font-color:            #121212;
+
+  /* Menu section footer */
+  --menufooter-bg:                       #F5F5F5;
+  --menufooter-font-color:               #121212;
+  --menufooter-border-size:              1px;
+  --menufooter-border-color:             #d0d0d0;
+
+  /* Footer */
+  --footer-bg:                           #171717;
+  --footer-font-color:                   #dbdbdb;
+  --footer-font-a-color:                 #dbdbdb;
+
+  /* UI */
+  --buttonlight-bg:                      #0088ff;
+  --buttonlight-border-size:             0px;
+  --buttonlight-font-color:              #121212;
+
+  --form-bg:                             #f7f5f3;
+  --form-border-size:                    1px;
+  --form-border-color:                   #e5e5e5;
 }
 
 
@@ -73,54 +136,54 @@ body
 /* Editor extensions */
 .app .section > .content
 {
-  background-color: #f7f5f3 !important;
+  background-color: var(--editor-extensions-bg) !important;
 }
 
 /* Sort button */
 .section-menu
 {
-  background-color: #fafafa !important;
-  color: black !important;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  background-color: var(--section-content-bg) !important;
+  color: var(--section-font-color) !important;
+  border-top: var(--section-border-size) solid var(--section-border-color);
+  border-bottom: var(--section-border-size) solid var(--section-border-color);
 }
 
 /* Account and Extensions background */
 .panel
 {
-  background-color: #f7f5f3 !important;
-  color: #121212 !important;
+  background-color: var(--panel-content-bg) !important;
+  color: var(--panel-font-color) !important;
 }
 
 /* Menu dropdown (Delete and such) */
 .dropdown-menu
 {
-  background-color: #ffffff !important;
-  color: #121212 !important;
+  background-color: var(--dropdown-bg) !important;
+  color: var(--dropdown-font-color) !important;
 }
 
 .nt-dropdown-menu.dark li .text
 {
-  color: #121212 !important;
+  color: var(--dropdown-font-color) !important;
 }
 
 .blue
 {
-  color: #121212 !important;
+  color: var(--dropdown-font-color) !important;
 }
 
 .gray-bg
 {
-  background-color: #ededed !important;
-  color: #121212 !important;
-  border: 1px solid #e5e5e5 !important;
+  background-color: var(--graybg-bg) !important;
+  color: var(--graybg-font-color) !important;
+  border: var(--graybg-border-size) solid var(graybg-border-color) !important;
 }
 
 .white-bg
 {
-  background-color: #f7f5f3 !important;
-  color: #121212 !important;
-  border: 0px solid #e5e5e5 !important;
+  background-color: var(--whitebg-bg) !important;
+  color: var(--whitebg-font-color) !important;
+  border: var(--whitebg-border-size) solid var(graybg-border-color) !important;
 }
 
 
@@ -284,59 +347,58 @@ body
 
 .menu-section-header
 {
-  background-color: #ededed !important;
-  border-bottom: 1px solid #d0d0d0 !important;
-  color: #121212 !important;
+  background-color: var(--menu-bg) !important;
+  border-bottom: var(--menu-border-size) solid var(--menu-border-color) !important;
+  color: var(--menu-font-color) !important;
 }
 
 .dropdown-menu.editor-menu ul li.menu-item
 {
-  background-color: #F5F5F5 !important;
-  border-bottom: 1px solid #d0d0d0 !important;
+  background-color: var(--dropdownmenu-bg) !important;
+  border-bottom: var(--dropdownmenu-border-size) solid var(--dropdownmenu-border-color) !important;
 }
 
 .dropdown-menu.editor-menu ul li.menu-item:hover
 {
-  background-color: #ededed !important;
-  color: #121212 !important;
+  background-color: var(--dropdownhover-bg) !important;
+  color: var(--dropdownhover-font-color) !important;
 }
 
 .menu-section-footer
 {
-  background-color: #F5F5F5 !important;
-  border-top: 1px solid #d0d0d0 !important;
-  color: #121212 !important;
+  background-color: var(--menufooter-bg) !important;
+  border-bottom: var(--menufooter-border-size) solid var(--menufooter-border-color) !important;
+  color: var(--menufooter-font-color) !important;
 }
-
 
 /* FOOTER */
 
 #footer-bar
 {
-  background-color: #171717 !important;
+  background-color: var(--footer-bg) !important;
 }
 
 #footer-bar a
 {
-  color: #121212;
+  color: var(--footer-font-color) !important;
 }
 
 .footer-bar-link > a
 {
-  color: #dbdbdb !important;
+  color: var(--footer-font-a-color) !important;
 }
 
 /* UI */
 
 button.light
 {
-  background-color: #0088ff !important;
-  border: 0 !important;
-  color: #121212 !important;
+  background-color: var(--buttonlight-bg) !important;
+  border: var(--buttonlight-border-size) !important;
+  color: var(--buttonlight-font-color) !important;
 }
 
 .form-control
 {
-  background-color: #f7f5f3 !important;
-  border: 1px solid #e5e5e5 !important;
+  background-color: var(--form-bg) !important;
+  border: var(--form-border-size) solid var(--form-border-color) !important;
 }
